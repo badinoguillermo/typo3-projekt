@@ -1,0 +1,14 @@
+<f:layout name="PageLayout" />
+<f:section name="Main">
+  <h1>Meine Testseite</h1>
+  <p>Hier entsteht mein eigenes Design.</p>
+
+  <!-- Schleife zum Inhalt -->
+  <f:for each="{content.main.records}" as="contentElement">
+    <f:cObject
+      typoscriptObjectPath="{contentElement.mainType}"
+      table="{contentElement.mainType}"
+      data="{contentElement}"
+    />
+  </f:for>
+</f:section>

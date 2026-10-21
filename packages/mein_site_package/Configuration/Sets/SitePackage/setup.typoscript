@@ -1,0 +1,14 @@
+page = PAGE
+page {
+    10 = PAGEVIEW
+    10 {
+        paths {
+            0 = EXT:mein_site_package/Resources/Private/PageView/
+        }
+        dataProcessing {
+            10 = page-content
+        }
+    }
+}
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
