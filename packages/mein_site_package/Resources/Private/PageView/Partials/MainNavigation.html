@@ -1,0 +1,37 @@
+<f:if condition="{mainMenu}">
+  <ul class="main-menu">
+    <f:for each="{mainMenu}" as="menuItem">
+      <li class="{f:if(condition: menuItem.active, then: 'active')}">
+        <a href="{menuItem.link}" title="{menuItem.title}">
+          {menuItem.title}
+        </a>
+
+        <!-- Level 2 -->
+        <f:if condition="{menuItem.children}">
+          <ul>
+            <f:for each="{menuItem.children}" as="childItem">
+              <li class="{f:if(condition: childItem.active, then: 'active')}">
+                <a href="{childItem.link}">{childItem.title}</a>
+
+                <!-- Level 3 -->
+                <f:if condition="{childItem.children}">
+                  <ul>
+                    <f:for each="{childItem.children}" as="grandChildItem">
+                      <li
+                        class="{f:if(condition: grandChildItem.active, then: 'active')}"
+                      >
+                        <a href="{grandChildItem.link}"
+                          >{grandChildItem.title}</a
+                        >
+                      </li>
+                    </f:for>
+                  </ul>
+                </f:if>
+              </li>
+            </f:for>
+          </ul>
+        </f:if>
+      </li>
+    </f:for>
+  </ul>
+</f:if>
