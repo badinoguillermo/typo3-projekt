@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de737ab4a4ba6be04c1fd9eb93ebb566",
+    "content-hash": "b939159768ca39cbdaca3468f47a9d14",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -822,6 +822,36 @@
                 "source": "https://github.com/googleapis/php-jwt/tree/v7.2.1"
             },
             "time": "2026-09-28T17:51:46+00:00"
+        },
+        {
+            "name": "guillermo/mein-site-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/mein_site_package",
+                "reference": "6bf04a951c269aef69550201f0c58a842ff00847"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mein_site_package"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Guillermo\\MeinSitePackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Mein TYPO3 Site Package für die Einarbeitung",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7403,7 +7433,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "guillermo/mein-site-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
