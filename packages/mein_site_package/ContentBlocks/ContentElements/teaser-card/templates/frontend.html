@@ -1,0 +1,30 @@
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+>
+  <div class="teaser-card">
+    <f:if condition="{data.header}">
+      <h3>{data.header}</h3>
+    </f:if>
+
+    <f:if condition="{data.bodytext}">
+      <div class="teaser-text">
+        <f:format.html>{data.bodytext}</f:format.html>
+      </div>
+    </f:if>
+
+    <f:if condition="{data.image}">
+      <div class="teaser-image">
+        <f:for each="{data.image}" as="file">
+          <f:image image="{file}" maxWidth="400" />
+        </f:for>
+      </div>
+    </f:if>
+
+    <f:if condition="{data.link}">
+      <f:link.typolink parameter="{data.link}" class="teaser-link">
+        Mehr erfahren
+      </f:link.typolink>
+    </f:if>
+  </div>
+</html>

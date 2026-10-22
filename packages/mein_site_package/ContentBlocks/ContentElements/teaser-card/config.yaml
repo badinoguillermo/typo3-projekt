@@ -1,0 +1,17 @@
+name: mein-site-package/teaser-card
+typeName: mein_site_package_teaser_card
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  - identifier: image
+    type: File
+    allowed: common-image-types
+    maxitems: 1
+  - identifier: link
+    type: Link

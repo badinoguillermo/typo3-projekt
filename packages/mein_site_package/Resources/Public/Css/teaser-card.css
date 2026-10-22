@@ -1,0 +1,35 @@
+.teaser-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.teaser-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.teaser-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.teaser-text {
+  color: #666;
+  line-height: 1.5;
+}
+
+.teaser-link {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+}
